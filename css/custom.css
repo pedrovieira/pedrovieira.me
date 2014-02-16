@@ -1,0 +1,509 @@
+/*
+ * Globals
+ */
+
+/* Type */
+
+html,
+body {
+  font-family: "Avenir Next", "Helvetica Neue", "Arial", sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5) fixed;
+  background: no-repeat url("../img/bg-1.jpg") 50% 0 fixed;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  background-color: rgba(41,50,65,.82);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Apps
+ */
+
+.apps-container {
+  padding: 52px 30px 72px;
+  background: rgba(255,255,255,.98);
+  text-shadow: none;
+}
+.apps-container h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px; 
+  margin-bottom: 52px;
+  color: #bfb3d8; /*light purple*/
+}
+
+.apps-container a {
+  color: #293241; /*dark base color*/
+  text-decoration: none;
+  border: none;
+  display:block;
+  padding: 8px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+.apps-container a p {
+  font-size: 28px;
+}
+.apps-container a img {
+  margin-bottom: 36px;
+}
+
+span.app-name {
+  display: block;
+  font-weight: bold;
+  color: white;
+  padding: 2px 6px 0px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 12px;
+}
+
+  .app-muzzy p{
+    color: #d96364; /*Muzzy red*/
+  }
+  .app-muzzy img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;;
+  }
+  .app-muzzy span.app-name {
+    background-color: rgba(255,153,153,1);
+    width: 80px;
+  }
+  .app-muzzy a:hover{
+    background-color: rgba(246,205,212,.18);
+  }
+  .app-muzzy a:active{
+    background-color: rgba(246,205,212,.48);
+  }
+
+  .app-harbinger p {
+    color: #df5826; /*Music Harbginer orange*/
+  }
+  .app-harbinger span.app-name {
+    background-color: #ff832e;
+    width: 190px;
+  }
+  .app-harbinger a:hover{
+    background-color: rgba(246,195,167,.24);
+  }
+  .app-harbinger a:active{
+    background-color: rgba(246,195,167,.52);
+  }
+
+  .app-picturito p {
+    color: #2a9ad6; /*Picturito blue*/ 
+  }
+  .app-picturito span.app-name {
+    background-color: #2697d1;
+    width: 110px;
+  }
+  .app-picturito a:hover{
+    background-color: rgba(177,226,249,.18);
+  }
+  .app-picturito a:active{
+    background-color: rgba(177,226,249,.42);
+  }
+
+/*
+ * About
+ */
+
+.about-container
+.about{}
+
+.about img {
+  margin: 48px 0 32px;
+}
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 100;
+  color: #ccd4ec;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: 100;
+  color: #bfb3d8;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about h3 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #b1e2f9;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.about p {
+  font-size: 15px;
+  font-weight: 100;
+  color: #ccd4ec;
+  padding-right: 30px;
+}
+
+.social {
+  margin-bottom: 32px;
+}
+
+.social-icon {
+  text-indent: 100px;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.social a.twitter { background: no-repeat url("../img/social-twitter.png") 0 0; }
+.social a.twitter:hover { background: no-repeat url("../img/social-twitter-up.png") 0 0; }
+.social a.github { background: no-repeat url("../img/social-github.png") 0 0; }
+.social a.github:hover { background: no-repeat url("../img/social-github-up.png") 0 0; }
+.social a.instagram { background: no-repeat url("../img/social-instagram.png") 0 0; }
+.social a.instagram:hover { background: no-repeat url("../img/social-instagram-up.png") 0 0; }
+.social a.linkedin { background: no-repeat url("../img/social-linkedin.png") 0 0; }
+.social a.linkedin:hover { background: no-repeat url("../img/social-linkedin-up.png") 0 0; }
+.social a.skype { background: no-repeat url("../img/social-skype.png") 0 0; }
+.social a.skype:hover { background: no-repeat url("../img/social-skype-up.png") 0 0; }
+.social a.dribbble { background: no-repeat url("../img/social-dribbble.png") 0 0; }
+.social a.dribbble:hover { background: no-repeat url("../img/social-dribbble-up.png") 0 0; }
+
+
+.list-inline > li{
+  padding-right: 15px;
+}
+.skill-break {
+  color: rgba(204,236,212,.4);
+}
+
+.callout {
+  color: #fadcc0;
+}
+
+.callout:hover {
+  color: #fadcc0;
+  text-decoration: underline;
+}
+
+/*
+  Review
+*/
+
+.review-container{
+}
+
+.reviews {
+  margin-top: 52px;
+  padding-left: 30px;
+}
+
+.reviews img {
+  margin: 48px 0 32px;
+}
+.reviews h3 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #b1e2f9;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.review {
+  text-align: left;
+  border-left: 4px solid #bfb3d8;
+  padding-left: 10px;
+}
+
+.reviews p {
+  font-size: 15px;
+  font-weight: 100;
+  color: #ccd4ec;
+}
+
+.review-site{
+  margin-bottom: 24px;
+}
+
+.site-mind-of-geek,
+.site-mac360,
+.site-lifehacker,
+.site-appstorm,
+.site-appstorm,
+.site-macmagazine,
+.site-idownload { 
+  background: no-repeat url("../img/review-sites.png");
+  width: 250px;
+  height:50px;  
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.review-site-list {
+}
+
+.review-site-list > li > a{
+  background: no-repeat url("../img/review-sites.png");
+  height: 50px;
+  
+}
+
+.site-mind-of-geek { background-position: 0 0; }
+.site-mac360 { background-position: 0 -50px; }
+
+.review-site-list a.site-lifehacker { background-position: 0 -100px; width: 160px;}
+.review-site-list a.site-macmagazine { background-position: 0 -200px; width: 250px; }
+.review-site-list a.site-appstorm { background-position: 0 -150px; width: 230px; }
+.review-site-list a.site-idownload { background-position: 0 -250px; width: 80px; }
+
+
+.reviews .contact{
+  margin-top:52px;
+  font-size: 24px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 228px) and (max-width: 768px) {
+  .cover-container {
+    width: 100%;
+  }
+  .masthead,
+  .mastfoot {
+    display: none;
+  }
+
+  .about img {
+    margin: 20px 0 15px;
+    width: 120px;
+    height: 120px;
+  }
+  .about h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .about h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .about p {
+    text-align: center;
+    font-style: 15px;
+    padding: 0 8px;
+  }
+  .social {
+    text-align: center;
+  }
+  .about h3{
+    text-align: center;
+    font-style: 13px;
+    text-transform: uppercase;
+  }
+  .review-container {
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+  /* Handle the widths */
+  .masthead,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+
+@media (min-width: 992px){
+    /* Pull out the header and footer */
+  .masthead,
+  .main-container  {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .masthead,
+  .mastfoot,
+  .cover-container,
+  .main-container {
+    width: 1024px;
+  }
+
+  .apps-container {
+    width: 33%;
+    margin:auto;
+  }
+
+  .about {
+    width: 33%;
+    padding-left:20px;
+  }
+  .about img {
+    margin: 48px 0 32px;
+    width: 120px;
+    height: 120px;
+  }
+  .about p {
+    font-size: 15px;
+    font-weight: 100;
+    color: #ccd4ec;
+    padding-right: 0px;
+  }
+
+  .review-container {
+    margin-top: 52px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .masthead,
+  .mastfoot,
+  .cover-container,
+  .main-container {
+    width: 1170px;
+  }
+  .about img {
+    margin: 32px 0 32px;
+    width: 140px;
+    height: 140px;
+  }
+  .review-container {
+  }
+  .reviews {
+    margin-top: 52px;
+    padding-right: 30px;
+  }
+
+}
+
+
+
+/*Unused*/
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}

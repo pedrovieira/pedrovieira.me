@@ -1,0 +1,250 @@
+/*
+ * Globals
+ */
+
+/* Type */
+
+html,
+body {
+  font-family: "Avenir Next", "Helvetica Neue", "Arial", sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5) fixed;
+  background: no-repeat url("../img/bg-1.jpg") 50% 0 fixed;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  background-color: rgba(41,50,65,.82);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Apps section
+ */
+
+.apps-container {
+  padding: 52px 30px 72px;
+  background: rgba(255,255,255,.98);
+  
+  text-shadow: none;
+}
+
+.apps-container h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px; 
+  margin-bottom: 72px;
+  color: #bfb3d8; /*light purple*/
+}
+
+.apps-container a {
+  color: #293241; /*dark base color*/
+  text-decoration: none;
+  border: none;
+  display:block;
+  padding: 8px;
+  margin: 16px 0;
+}
+
+.apps-container a p {
+  font-size: 32px;
+}
+
+.apps-container a img {
+  margin-bottom: 36px;
+}
+
+  .app-muzzy p{
+    color: #d96364; /*Muzzy red*/
+  }
+
+  .app-muzzy img{
+    //background: no-repeat url("../img/app-muzzy-icon_256x256.png") 0 0;
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;;
+  }
+
+  .app-muzzy a:hover{
+    background-color: rgba(246,205,212,.18);
+  }
+  .app-muzzy a:active{
+    background-color: rgba(246,205,212,.48);
+  }
+
+  .app-harbinger p {
+    color: #df5826; /*Music Harbginer orange*/
+  }
+
+  .app-harbinger a:hover{
+    background-color: rgba(246,195,167,.24);
+  }
+  .app-harbinger a:active{
+    background-color: rgba(246,195,167,.52);
+  }
+
+  .app-picturito p {
+    color: #2a9ad6; /*Picturito blue*/
+  }
+
+  .app-picturito a:hover{
+    background-color: rgba(177,226,249,.18);
+  }
+  .app-picturito a:active{
+    background-color: rgba(246,195,167,.42);
+  }
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (max-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    //width: 1170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1170px;
+  }
+}
