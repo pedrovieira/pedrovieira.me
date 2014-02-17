@@ -165,7 +165,7 @@ span.app-name {
   .app-muzzy img{
     border-collapse: collapse;
     height: 256px;
-    width: 256px;;
+    width: 256px;
   }
   .app-muzzy span.app-name {
     background-color: rgba(255,153,153,1);
@@ -330,6 +330,13 @@ span.app-name {
   margin-bottom: 24px;
 }
 
+.review-site-logo {
+  background: no-repeat url("../img/review-sites-smaller.png");
+}
+.review-site-logo:hover {
+  background: no-repeat url("../img/review-sites-smaller-colored.png");
+}
+
 .site-mind-of-geek,
 .site-mac360,
 .site-lifehacker,
@@ -337,29 +344,24 @@ span.app-name {
 .site-appstorm,
 .site-macmagazine,
 .site-idownload { 
-  background: no-repeat url("../img/review-sites.png");
   width: 250px;
-  height:50px;  
+  height:28px;  
   text-indent: -9999px;
   display: inline-block;
 }
 
-.review-site-list {
-}
-
-.review-site-list > li > a{
-  background: no-repeat url("../img/review-sites.png");
-  height: 50px;
-  
-}
-
 .site-mind-of-geek { background-position: 0 0; }
-.site-mac360 { background-position: 0 -50px; }
+.site-mac360 { background-position: 0 -30px; }
+.site-mac360:hover { background-position: 0 -30px; }
 
-.review-site-list a.site-lifehacker { background-position: 0 -100px; width: 160px;}
-.review-site-list a.site-macmagazine { background-position: 0 -200px; width: 250px; }
-.review-site-list a.site-appstorm { background-position: 0 -150px; width: 230px; }
-.review-site-list a.site-idownload { background-position: 0 -250px; width: 80px; }
+.review-site-list a {
+  margin: 6px 0;
+}
+
+.review-site-list a.site-lifehacker { background-position: 0 -60px; width: 120px;}
+.review-site-list a.site-macmagazine { background-position: 0 -90px; width: 180px; }
+.review-site-list a.site-appstorm { background-position: 0 -120px; width: 160px; }
+.review-site-list a.site-idownload { background-position: 0 -150px; width: 60px;}
 
 
 .reviews .contact{
@@ -382,8 +384,8 @@ span.app-name {
 
   .about img {
     margin: 20px 0 15px;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
   }
   .about h1 {
     text-align: center;
@@ -394,6 +396,7 @@ span.app-name {
     font-size: 15px;
   }
   .about p {
+    font-weight: normal;
     text-align: center;
     font-style: 15px;
     padding: 0 8px;
@@ -406,8 +409,45 @@ span.app-name {
     font-style: 13px;
     text-transform: uppercase;
   }
+
+  .apps-container {
+    padding:32px 0px;
+  }
+  .apps-container h1{
+    margin: 0 0 32px;
+  }
+  .apps-container a p {
+    font-size: 18px;
+  }
+
+  .app > a > img{
+    display: inline-block;
+    border-collapse: collapse;
+    height: 128px;
+    width: 128px; 
+    margin-bottom: 4px;
+  }
+
+  .app-description {
+    padding-left: 10px;
+  }
+
+  .app-description span {
+    margin: 18px 8px 18px 0;
+    display: inline-block;
+  }
+
+
   .review-container {
     padding: 0 8px;
+  }
+
+  .reviews-full {
+    display: none;
+  }
+
+  .reviews-mobile {
+    margin-bottom: 52px;
   }
 }
 
@@ -415,8 +455,17 @@ span.app-name {
 
   /* Handle the widths */
   .masthead,
-  .cover-container {
+  .cover-container,
+  .main-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .reviews-full {
+    display: none;
+  }
+
+  .reviews {
+    margin-bottom: 52px;
   }
 }
 
@@ -436,12 +485,15 @@ span.app-name {
   .site-wrapper-inner {
     vertical-align: middle;
   }
+
+  .reviews-mobile {
+    display: none;
+  }
 }
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .masthead,
-  .mastfoot,
   .cover-container,
   .main-container {
     width: 1024px;
@@ -472,6 +524,10 @@ span.app-name {
     margin-top: 52px;
   }
 
+  .reviews-mobile {
+    display: none;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -493,9 +549,11 @@ span.app-name {
     padding-right: 30px;
   }
 
+  .reviews-mobile {
+    display: none;
+  }
+
 }
-
-
 
 /*Unused*/
 
