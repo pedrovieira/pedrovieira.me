@@ -18,16 +18,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 
 /*
  * Base structure
@@ -38,11 +28,9 @@ body {
   height: 100%;
 }
 body {
-  text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   box-shadow: inset 0 0 100px rgba(0,0,0,.5) fixed;
 }
-
 img.still-bg {
   z-index: -100;
 
@@ -59,14 +47,12 @@ img.still-bg {
   top: 0%;
   left: 50%;
 }
-
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.still-bg {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
 }
-
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -84,56 +70,9 @@ img.still-bg {
   margin-left: auto;
   margin-right: auto;
 }
-
 /* Padding for spacing */
 .inner {
   padding: 30px;
-}
-
-
-/*
- * Header
- */
-
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
 }
 
 
@@ -145,17 +84,17 @@ img.still-bg {
   padding: 52px 30px 72px;
   background: rgba(255,255,255,.98);
   text-shadow: none;
+  text-align: center;
 }
 .apps-container h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px; 
   margin-bottom: 52px;
-  color: #bfb3d8; /*light purple*/
+  color: #bfb3d8; /* light purple */
 }
-
 .apps-container a {
-  color: #293241; /*dark base color*/
+  color: #293241; /* dark base color */
   text-decoration: none;
   border: none;
   display:block;
@@ -168,8 +107,8 @@ img.still-bg {
 }
 .apps-container a img {
   margin-bottom: 36px;
+  text-align: center;
 }
-
 span.app-name {
   display: block;
   font-weight: bold;
@@ -183,7 +122,7 @@ span.app-name {
 }
 
   .app-muzzy p{
-    color: #d96364; /*Muzzy red*/
+    color: #d96364; /* Muzzy red */
   }
   .app-muzzy img{
     border-collapse: collapse;
@@ -202,7 +141,7 @@ span.app-name {
   }
 
   .app-harbinger p {
-    color: #df5826; /*Music Harbginer orange*/
+    color: #df5826; /* Music Harbginer orange */
   }
   .app-harbinger span.app-name {
     background-color: #ff832e;
@@ -216,7 +155,7 @@ span.app-name {
   }
 
   .app-picturito p {
-    color: #2a9ad6; /*Picturito blue*/ 
+    color: #2a9ad6; /* Picturito blue */ 
   }
   .app-picturito span.app-name {
     background-color: #2697d1;
@@ -232,10 +171,9 @@ span.app-name {
 /*
  * About
  */
-
-.about-container
-.about{}
-
+.about .avatar {
+  text-align: center;
+}
 .about img {
   margin: 48px 0 32px;
 }
@@ -268,7 +206,7 @@ span.app-name {
 .about p {
   font-size: 15px;
   font-weight: 100;
-  color: #ccd4ec;
+  color: #dae0ef;
   padding-right: 30px;
 }
 
@@ -318,12 +256,10 @@ span.app-name {
   Review
 */
 
-.review-container{
-}
-
 .reviews {
   margin-top: 52px;
   padding-left: 30px;
+  text-align: left;
 }
 
 .reviews img {
@@ -386,10 +322,13 @@ span.app-name {
 .review-site-list a.site-macmagazine { background-position: 0 -120px; width: 180px; }
 .review-site-list a.site-idownload { background-position: 0 -150px; width: 60px;}
 
-
 .reviews .contact{
-  margin-top:52px;
+  margin-top: 52px;
   font-size: 24px;
+}
+
+.review-site-list-container {
+  padding-top: 12px;
 }
 
 /*
@@ -399,10 +338,6 @@ span.app-name {
 @media (min-width: 228px) and (max-width: 768px) {
   .cover-container {
     width: 100%;
-  }
-  .masthead,
-  .mastfoot {
-    display: none;
   }
 
   .about img {
@@ -460,7 +395,6 @@ span.app-name {
     display: inline-block;
   }
 
-
   .review-container {
     padding: 0 8px;
   }
@@ -475,18 +409,17 @@ span.app-name {
 }
 
 @media (min-width: 768px) and (max-width: 992px){
-
   /* Handle the widths */
-  .masthead,
   .cover-container,
   .main-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-
+  .about {
+    text-align: center;
+  }
   .reviews-full {
     display: none;
   }
-
   .reviews {
     margin-bottom: 52px;
   }
@@ -495,20 +428,14 @@ span.app-name {
 
 @media (min-width: 992px){
     /* Pull out the header and footer */
-  .masthead,
   .main-container  {
     position: fixed;
     top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
-
   .reviews-mobile {
     display: none;
   }
@@ -516,17 +443,14 @@ span.app-name {
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .masthead,
   .cover-container,
   .main-container {
     width: 1024px;
   }
-
   .apps-container {
     width: 33%;
     margin:auto;
   }
-
   .about {
     width: 33%;
     padding-left:20px;
@@ -539,14 +463,11 @@ span.app-name {
   .about p {
     font-size: 15px;
     font-weight: 100;
-    color: #ccd4ec;
     padding-right: 0px;
   }
-
   .review-container {
     margin-top: 52px;
   }
-
   .reviews-mobile {
     display: none;
   }
@@ -554,8 +475,6 @@ span.app-name {
 }
 
 @media (min-width: 1200px) {
-  .masthead,
-  .mastfoot,
   .cover-container,
   .main-container {
     width: 1170px;
@@ -571,20 +490,8 @@ span.app-name {
     margin-top: 52px;
     padding-right: 30px;
   }
-
   .reviews-mobile {
     display: none;
   }
 
-}
-
-/*Unused*/
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
 }
