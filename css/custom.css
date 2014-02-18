@@ -313,14 +313,24 @@ span.app-name {
 .site-mac360 { background-position: 0 -30px; }
 .site-mac360:hover { background-position: 0 -30px; }
 
+
 .review-site-list a {
   margin: 6px 0;
 }
 
-.review-site-list a.site-lifehacker { background-position: 0 -60px; width: 120px;}
+.review-site-list a.site-lifehacker { background-position: 0 -60px; width: 120px; }
 .review-site-list a.site-appstorm { background-position: 0 -90px; width: 160px; }
 .review-site-list a.site-macmagazine { background-position: 0 -120px; width: 180px; }
-.review-site-list a.site-idownload { background-position: 0 -150px; width: 60px;}
+.review-site-list a.site-idownload { background-position: 0 -150px; width: 60px; }
+
+.site-lifehacker { background-position: 0 -60px; width: 120px;}
+.site-lifehacker:hover { background-position: 0 -60px; }
+
+.site-appstorm { background-position: 0 -90px; width: 160px; }
+.site-appstorm:hover { background-position: 0 -90px; width: 160px; }
+.site-macmagazine { background-position: 0 -120px; width: 180px; }
+.site-idownload { background-position: 0 -150px; width: 60px;}
+
 
 .reviews .contact{
   margin-top: 52px;
@@ -376,6 +386,7 @@ span.app-name {
   }
   .apps-container a p {
     font-size: 18px;
+    font-weight: normal;
   }
 
   .app > a > img{
@@ -405,6 +416,7 @@ span.app-name {
 
   .reviews-mobile {
     margin-bottom: 52px;
+    padding-left: 15px;
   }
 }
 
