@@ -18,25 +18,26 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <script>
-    window.onload=function() {
-    	var tweets=new Array(); 
-		tweets[0] = "@w1tch_ Hi Pedro, what's up?";       
-		tweets[1] = "@w1tch_ Sup Pedro, I heard you like making cool apps.";
-		tweets[2] = "@w1tch_ Sup Pedro, I heard you dig Daft Punk.";
-		tweets[3] = "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");";
-		var item = tweets[Math.floor(Math.random()*tweets.length)];
-			
-		var links = document.links;
-		for (var i=0, n=links.length;i<n;i++) {
-		    if (links[i].title === "tweet") {
-				links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);	
-			}
-		 }
-	}
-  </script>
+    <script>
+      window.onload = function() {
+        var tweets = new Array(); 
+        tweets[0] = "@w1tch_ Hi Pedro, what's up?";       
+        tweets[1] = "@w1tch_ Sup Pedro, I heard you like making cool apps.";
+        tweets[2] = "@w1tch_ Sup Pedro, I heard you dig Daft Punk.";
+        tweets[3] = "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");";
+        tweets[4] = "@w1tch_ *bip bop bip* Sup Pedro, yes I'm not a robot.";
+        var item = tweets[Math.floor(Math.random()*tweets.length)];
+          
+        var links = document.links;
+        for (var i=0, n=links.length;i<n;i++) {
+            if (links[i].title === "tweet") {
+              links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);  
+            }
+        }
+      }
+    </script>
+  </head>
 
   <body>
   <img src="img/bg-1.jpg" class="still-bg" />
@@ -88,7 +89,7 @@
                 </ul>
               </div>
 
-              <p class="contact"> Get in touch. Send me a <a class="callout” title="tweet">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
+              <p class="contact"> Get in touch. Send me a <a class="callout" href="" title="tweet">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
             </div> <!-- End Reviews -->
             
           </div> <!-- End main-container -->
@@ -146,7 +147,7 @@
                 </ul>
               </div>
 
-              <p class="contact"> Get in touch. Send me a <a class="callout"  title="tweet">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
+              <p class="contact"> Get in touch. Send me a <a class="callout" title="tweet" href="">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
             </div> <!-- End Reviews -->
 
         </div> <!-- End cover-container -->
