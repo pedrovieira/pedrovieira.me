@@ -1,0 +1,558 @@
+/*
+ * Globals
+ */
+
+/* Type */
+
+html,
+body {
+  font-family: "Avenir Next", "Helvetica Neue", "Arial", sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5) fixed;
+}
+img.still-bg {
+  z-index: -100;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positionisng */
+  position: fixed;
+  top: 0%;
+  left: 50%;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.still-bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+p {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  background-color: rgba(41,50,65,.82);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Apps
+ */
+
+.apps-container {
+  padding: 52px 30px 72px;
+  background: rgba(255,255,255,.98);
+  text-shadow: none;
+  text-align: center;
+}
+.apps-container h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px; 
+  margin-bottom: 52px;
+  color: #bfb3d8; /* light purple */
+}
+.apps-container a {
+  color: #293241; /* dark base color */
+  text-decoration: none;
+  border: none;
+  display:block;
+  padding: 8px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+.apps-container a p {
+  font-size: 28px;
+}
+.apps-container a img {
+  margin-bottom: 36px;
+  text-align: center;
+}
+span.app-name {
+  display: block;
+  font-weight: bold;
+  color: white;
+  padding: 2px 6px 0px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 12px;
+}
+
+  .app-muzzy p{
+    color: #d96364; /* Muzzy red */
+  }
+  .app-muzzy img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;
+  }
+  .app-muzzy span.app-name {
+    background-color: rgba(255,153,153,1);
+    width: 80px;
+  }
+  .app-muzzy a:hover{
+    background-color: rgba(246,205,212,.18);
+  }
+  .app-muzzy a:active{
+    background-color: rgba(246,205,212,.48);
+  }
+
+  .app-harbinger p {
+    color: #df5826; /* Music Harbginer orange */
+  }
+  .app-harbinger span.app-name {
+    background-color: #ff832e;
+    width: 190px;
+  }
+  .app-harbinger a:hover{
+    background-color: rgba(246,195,167,.24);
+  }
+  .app-harbinger a:active{
+    background-color: rgba(246,195,167,.52);
+  }
+
+  .app-picturito p {
+    color: #2a9ad6; /* Picturito blue */ 
+  }
+  .app-picturito span.app-name {
+    background-color: #2697d1;
+    width: 110px;
+  }
+  .app-picturito a:hover{
+    background-color: rgba(177,226,249,.18);
+  }
+  .app-picturito a:active{
+    background-color: rgba(177,226,249,.42);
+  }
+
+/*
+ * About
+ */
+.about .avatar {
+  text-align: center;
+}
+.about img {
+  margin: 48px 0 32px;
+  box-shadow: 0 1px 22px rgba(0,0,0,.08);
+}
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #ccd4ec;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #bfb3d8;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b1e2f9;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.about p {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #dae0ef;
+}
+
+.social {
+  margin-bottom: 32px;
+}
+
+.social >li:last-child {
+  padding:0;
+  margin:0;
+}
+
+.social-icon  {
+  text-indent: 100px;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: no-repeat url("../img/social-icons-spritesheet.png");
+}
+
+.social a.twitter { background-position: -30px 0px; }
+.social a.twitter:hover { background-position: 0px 0px; }
+
+.social a.github { background-position: -30px -180px; }
+.social a.github:hover { background-position: 0px -180px; }
+
+.social a.instagram { background-position: -30px -120px; }
+.social a.instagram:hover { background-position: 0px -120px; }
+
+.social a.linkedin { background-position: -30px -60px; }
+.social a.linkedin:hover { background-position: 0px -60px; }
+
+.social a.skype { background-position: -30px -150px; }
+.social a.skype:hover { background-position: 0px -150px; }
+
+.social a.dribbble { background-position: -30px -120px; }
+.social a.dribbble:hover { background-position: 0px -120px; }
+
+
+.list-inline > li{
+  padding-right: 15px;
+}
+.skill-break {
+  color: rgba(204,236,212,.4);
+}
+
+.skills {
+  margin-bottom:32px;
+}
+
+.callout {
+  color: #fadcc0;
+}
+
+.callout:hover {
+  color: #fadcc0;
+  text-decoration: underline;
+}
+
+/*
+  Review
+*/
+
+.reviews {
+  margin-top: 52px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.reviews img {
+  margin: 48px 0 32px;
+}
+.reviews h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b1e2f9;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.review {
+  text-align: left;
+  border-left: 4px solid #bfb3d8;
+  padding-left: 10px;
+}
+
+.reviews p {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #ccd4ec;
+}
+
+.review-site{
+  margin-bottom: 24px;
+}
+
+.review-site-logo {
+  background: no-repeat url("../img/review-sites-sprite-normal@2x.png");
+  background-size: 60px; 
+}
+.review-site-logo:hover {
+  background: no-repeat url("../img/review-sites-sprite-hover@2x.png");
+  background-size: 250px;
+ }
+
+.site-mind-of-geek,
+.site-mac360,
+.site-lifehacker,
+.site-appstorm,
+.site-appstorm,
+.site-macmagazine,
+.site-idownload { 
+  width: 250px;
+  height:28px;  
+  text-indent: -9999px;
+  background-size: 60px;
+  display: inline-block;
+  background-size: 250px; 
+}
+
+.site-mind-of-geek { background-position: 0 0; }
+.site-mac360 { background-position: 0 -30px; }
+.site-lifehacker { background-position: 0 -60px; width: 120px; }
+.site-appstorm { background-position: 0 -90px; width: 160px; }
+.site-macmagazine { background-position: 0 -120px; width: 190px; }
+.site-idownload { background-position: 0 -150px; width: 180px;}
+
+.site-mind-of-geek:hover { background-position: 0 0; }
+.site-mac360:hover { background-position: 0 -30px; }
+.site-lifehacker:hover { background-position: 0 -60px; width: 120px; }
+.site-macmagazine:hover { background-position: 0 -120px; width: 190px; }
+.site-appstorm:hover { background-position: 0 -90px; width: 160px; }
+.site-idownload:hover { background-position: 0 -150px; width: 180px;}
+
+
+.review-site-list a {
+  margin: 6px 0;
+}
+
+.reviews .contact{
+  margin-top: 52px;
+  font-size: 24px;
+}
+
+.review-site-list-container {
+  padding-top: 12px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 228px) and (max-width: 768px) {
+  .cover-container {
+    width: 100%;
+  }
+
+  .about img {
+    margin: 20px 0 15px;
+    width: 180px;
+    height: 180px;
+  }
+  .about h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .about h2 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .about p {
+    font-weight: normal;
+    text-align: center;
+    font-style: 15px;
+    padding: 0 8px;
+  }
+  .social {
+    text-align: center;
+  }
+  .about h3{
+    text-align: center;
+    font-style: 13px;
+    text-transform: uppercase;
+  }
+
+  .apps-container {
+    padding:32px 0px;
+  }
+  .apps-container h1{
+    margin: 0 0 32px;
+  }
+  .apps-container a p {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .app > a > img{
+    display: inline-block;
+    border-collapse: collapse;
+    height: 128px;
+    width: 128px; 
+    margin-bottom: 4px;
+  }
+
+  .app-description {
+    padding-left: 10px;
+  }
+
+  .app-description span {
+    margin: 18px 8px 18px 0;
+    display: inline-block;
+  }
+
+  .review-container {
+    padding: 0 8px;
+  }
+
+  .reviews-full {
+    display: none;
+  }
+
+  .reviews-mobile {
+    margin-bottom: 52px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  /* Handle the widths */
+  .cover-container,
+  .main-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .about {
+    text-align: center;
+  }
+  .about img {
+    margin: 48px 0 32px;
+    width: 240px;
+    height: 240px;
+  }
+  .reviews-full {
+    display: none;
+  }
+  .reviews {
+    margin-bottom: 52px;
+  }
+}
+
+
+@media (min-width: 992px){
+    /* Pull out the header and footer */
+  .main-container  {
+    position: fixed;
+    top: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .reviews-mobile {
+    display: none;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cover-container,
+  .main-container {
+    width: 1024px;
+  }
+  .apps-container {
+    width: 33%;
+    margin:auto;
+  }
+  .about {
+    width: 33%;
+    padding-left:20px;
+  }
+  .about img {
+    margin: 48px 0 32px;
+    width: 120px;
+    height: 120px;
+  }
+  .about p {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+  .review-container {
+    margin-top: 52px;
+  }
+  .reviews-mobile {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .cover-container,
+  .main-container {
+    width: 1170px;
+  }
+  .about img {
+    margin: 32px 0 32px;
+    width: 140px;
+    height: 140px;
+  }
+  .review-container {
+  }
+  .reviews {
+    margin-top: 52px;
+    padding-right: 30px;
+  }
+  .reviews-mobile {
+    display: none;
+  }
+}
+
+
+/* @2x icons */
+
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  .social a.twitter { background-size: 90px; background-position: -60px 0px; }
+  .social a.twitter:hover { background-size: 90px; background-position: -30px 0px; }
+
+  .social a.github { background-size: 90px; background-position: -60px -180px; }
+  .social a.github:hover { background-size: 90px; background-position: -30px -180px; }
+
+  .social a.instagram { background-size: 90px; background-position: -60px -120px; }
+  .social a.instagram:hover { background-size: 90px; background-position: -30px -120px; }
+
+  .social a.linkedin { background-size: 90px; background-position: -60px -60px; }
+  .social a.linkedin:hover { background-size: 90px; background-position: -30px -60px; }
+
+  .social a.skype { background-size: 90px; background-position: -60px -150px; }
+  .social a.skype:hover { background-size: 90px; background-position: -30px -150px; }
+
+  .social a.dribbble { background-size: 90px; background-position: -60px -120px; }
+  .social a.dribbble:hover { background-size: 90px; background-position: -30px -120px; }
+}
+
+
