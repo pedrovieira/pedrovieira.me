@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pedro Vieira is a Mac OS X developer from Portugal">
+    <meta name="author" content="Pedro Vieira">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-64.ico">
+
+    <title>Pedro Vieira - Mac OS X Developer</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <script>
+    window.onload=function() {
+    	var tweets=new Array(); 
+		tweets[0] = "@w1tch_ Hi Pedro, what's up?";       
+		tweets[1] = "@w1tch_ Sup Pedro, I heard you like making cool apps.";
+		tweets[2] = "@w1tch_ Sup Pedro, I heard you dig Daft Punk.";
+		tweets[3] = "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");";
+		var item = tweets[Math.floor(Math.random()*tweets.length)];
+			
+		var links = document.links;
+		for (var i=0, n=links.length;i<n;i++) {
+		    if (links[i].title === "tweet") {
+				links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);	
+			}
+		 }
+	}
+  </script>
+
+  <body>
+  <img src="img/bg-1.jpg" class="still-bg" />
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="main-container clearfix">
+            
+            <!-- About -->
+            <div class="about col-md-4">
+              <div class="avatar">
+                <img src="img/avatar@2x.jpg" class="img-circle" alt="Pedro's avatar" />
+              </div>
+              <h1> Pedro Vieira </h1>
+              <h2> Mac OS X Developer </h2>
+              <p>I‘m 19 years old self-taught Mac OS X software developer from Portugal.</p>
+              <ul class="social list-inline">
+                <!-- These icons are made by Joseph Wain in this awesoe Glyphish icon pack: http://www.glyphish.com/ -->
+                <li><a class="social-icon twitter" href="https://twitter.com/w1tch_"> Twitter </a></li>
+                <li><a class="social-icon github" href="https://github.com/pedrovieira7"> Github </a></li>
+                <li><a class="social-icon instagram" href="http://instagram.com/w1tch_"> Instagram </a></li>
+                <li><a class="social-icon linkedin" href="http://linkedin.com/in/pedrovieiradev "> Linkedin </a></li>
+                <li><a class="social-icon skype" href="skype:w1tchdev?chat"> Skype </a></li>
+              </ul>
+              <div class="skills"> 
+                <h3> Skills </h3>
+                <p> Objective-C &amp; Cocoa <span class="skill-break">//</span> Mac OS X <span class="skill-break">//</span> Java <span class="skill-break">//</span> PHP <span class="skill-break">//</span> MySQL <span class="skill-break">//</span> Visual Basic .NET <span class="skill-break">//</span> Dancing to Daft Punk</p>
+                <p> Currently studying Computer Science at <a class="callout" href="http://www.fct.unl.pt/en/faculty">FCT/UNL</a></p>
+              </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviews reviews-full col-md-4 col-md-offset-4">
+              <h3> Reviews </h3>
+              <p class="review"> Muzzy screams the polish users would expect from large development teams at Apple or other software makers. </p>
+              <p class="review-site"><a class="review-site-logo site-mind-of-geek" href="http://mindofthegeek.com/2013/07/04/muzzy-mac-itunes-app-menu-bar/">Mind of Geek</a> </p>
+              <p class="review"> If less is more and small is beautiful, then Muzzy for your Mac is the most wonderful iTunes utility that money cannot buy. </p>
+              <p class="review-site "><a class="review-site-logo site-mac360" href="http://mac360.com/2013/06/itunes-menubar-controls-song-lyrics-album-artwork-music-browsingall-in-a-free-app-named-muzzy/">Mac360</a> </p>
+              
+              <div class="review-site-list-container">
+                <h3> Press </h3>
+                <ul class="list-inline review-site-list">
+                  <li><a class="review-site-logo site-lifehacker" href="http://lifehacker.com/muzzy-gives-you-menubar-access-to-itunes-1440696041"> Lifehacker </a></li>
+                  <li><a class="review-site-logo site-appstorm" href="http://mac.appstorm.net/reviews/music-reviews/muzzy-a-simpler-way-to-keep-track-of-now-playing/"> Appstorm </a></li>
+                  <li><a class="review-site-logo site-macmagazine" href="http://macmagazine.com.br/2013/06/04/muzzy-e-um-simples-e-elegante-aplicativo-para-acompanhar-o-que-esta-tocando-no-itunes"> Mac Magazine </a></li>
+                  <li><a class="review-site-logo site-idownload" href="http://www.idownloadblog.com/2013/06/05/muzzy-osx-review/"> iDownload </a></li>
+                </ul>
+              </div>
+
+              <p class="contact"> Get in touch. Send me a <a class="callout” title="tweet">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
+            </div> <!-- End Reviews -->
+            
+          </div> <!-- End main-container -->
+
+          <!-- Apps -->
+          <div class="inner apps-container col-lg-4 col-lg-offset-4">
+            <h1 class="">Projects</h1>
+
+            <div class="app app-muzzy">
+              <a href="http://muzzyapp.com/">
+                <img src="img/app-muzzy-icon_256x256.png" alt="Visit getmuzzy.com" class="" />
+                <div class="app-description"> 
+                  <span class="app-name"> Muzzy </span>
+                  <p class="lead">A tiny and gorgeous iTunes companion that lives in your menu bar</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="app app-harbinger">
+              <a href="http://smarturl.it/MusicHarbinger">
+                <img src="img/app-harbinger-icon_256x256.png" alt="Download Music Harbinger from the AppStore" class=""  />
+                <div class="app-description">
+                  <span class="app-name"> Music Harbinger </span>
+                  <p class="lead">Easily share what you're listening to on iTunes</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="app app-picturito">
+              <a href="http://smarturl.it/Picturito">
+                <img src="img/app-picturito-icon_256x256.png" alt="Download Picturito from the AppStore" class=""  />
+                <div class="app-description">
+                  <span class="app-name"> Picturito </span>
+                  <p class="lead">A drag &amp; drop Facebook album uploader</p>
+                </div>
+              </a>
+            </div>
+          </div> <!-- End Apps -->
+
+          <!-- Reviews -->
+            <div class="reviews reviews-mobile col-md-4 col-md-offset-4">
+              <h3> Reviews </h3>
+              <p class="review"> Muzzy screams the polish users would expect from large development teams at Apple or other software makers. </p>
+              <p class="review-site"><a class="review-site-logo site-mind-of-geek" href="http://mindofthegeek.com/2013/07/04/muzzy-mac-itunes-app-menu-bar/">Mind of Geek</a> </p>
+              <p class="review"> If less is more and small is beautiful, then Muzzy for your Mac is the most wonderful iTunes utility that money cannot buy. </p>
+              <p class="review-site "><a class="review-site-logo site-mac360" href="http://mac360.com/2013/06/itunes-menubar-controls-song-lyrics-album-artwork-music-browsingall-in-a-free-app-named-muzzy/">Mac360</a> </p>
+
+              <div class="review-site-list-container">
+                <h3> Press </h3>
+                <ul class="list-inline review-site-list">
+                  <li><a class="review-site-logo site-lifehacker" href="http://lifehacker.com/muzzy-gives-you-menubar-access-to-itunes-1440696041"> Lifehacker </a></li>
+                  <li><a class="review-site-logo site-appstorm" href="http://mac.appstorm.net/reviews/music-reviews/muzzy-a-simpler-way-to-keep-track-of-now-playing"> Appstorm </a></li>
+                  <li><a class="review-site-logo site-macmagazine" href="http://macmagazine.com.br/2013/06/04/muzzy-e-um-simples-e-elegante-aplicativo-para-acompanhar-o-que-esta-tocando-no-itunes"> Mac Magazine </a></li>
+                  <li><a class="review-site-logo site-idownload" href="http://www.idownloadblog.com/2013/06/05/muzzy-osx-review/"> iDownload </a></li>
+                </ul>
+              </div>
+
+              <p class="contact"> Get in touch. Send me a <a class="callout"  title="tweet">tweet</a> or <a class="callout" href="mailto:pedrovieiradev@hotmail.com">email me directly</a></p>          
+            </div> <!-- End Reviews -->
+
+        </div> <!-- End cover-container -->
+      </div> <!-- end site-wrapper-inner -->
+    </div> <!-- end site-wrapper -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40284490-1', 'pedrovieira.me');
+      ga('send', 'pageview');
+    </script>
+  
+  </body>
+</html>
