@@ -436,6 +436,16 @@ span.app-name {
     margin-bottom: 52px;
     padding-left: 15px;
   }
+
+  .reviews-mobile p {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .reviews-mobile .list-inline > li{
+    padding: 0;
+    display: block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -457,6 +467,9 @@ span.app-name {
   }
   .reviews {
     margin-bottom: 52px;
+  }
+  .list-inline > li{
+    padding: 0 15px 0 0;
   }
 }
 
