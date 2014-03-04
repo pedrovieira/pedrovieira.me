@@ -218,8 +218,8 @@ span.app-name {
 }
 
 .social >li:last-child {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .social-icon  {
@@ -248,6 +248,31 @@ span.app-name {
 
 .social a.dribbble { background-position: -30px -120px; }
 .social a.dribbble:hover { background-position: 0px -120px; }
+
+/* @2x icons */
+
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  .social a.twitter { background-size: 90px; background-position: -60px 0px; }
+  .social a.twitter:hover { background-size: 90px; background-position: -30px 0px; }
+
+  .social a.github { background-size: 90px; background-position: -60px -180px; }
+  .social a.github:hover { background-size: 90px; background-position: -30px -180px; }
+
+  .social a.instagram { background-size: 90px; background-position: -60px -120px; }
+  .social a.instagram:hover { background-size: 90px; background-position: -30px -120px; }
+
+  .social a.linkedin { background-size: 90px; background-position: -60px -60px; }
+  .social a.linkedin:hover { background-size: 90px; background-position: -30px -60px; }
+
+  .social a.skype { background-size: 90px; background-position: -60px -150px; }
+  .social a.skype:hover { background-size: 90px; background-position: -30px -150px; }
+
+  .social a.dribbble { background-size: 90px; background-position: -60px -120px; }
+  .social a.dribbble:hover { background-size: 90px; background-position: -30px -120px; }
+}
 
 
 .list-inline > li{
@@ -324,7 +349,7 @@ span.app-name {
 .site-macmagazine,
 .site-idownload { 
   width: 250px;
-  height:28px;  
+  height: 28px;  
   text-indent: -9999px;
   background-size: 60px;
   display: inline-block;
@@ -397,7 +422,7 @@ span.app-name {
   }
 
   .apps-container {
-    padding:32px 0px;
+    padding: 32px 0px;
   }
   .apps-container h1{
     margin: 0 0 32px;
@@ -413,10 +438,6 @@ span.app-name {
     height: 128px;
     width: 128px; 
     margin-bottom: 4px;
-  }
-
-  .app-description {
-    padding-left: 10px;
   }
 
   .app-description span {
@@ -438,7 +459,6 @@ span.app-name {
   }
 
   .reviews-mobile p {
-    font-size: 28px;
     margin-bottom: 32px;
   }
 
@@ -541,31 +561,3 @@ span.app-name {
     display: none;
   }
 }
-
-
-/* @2x icons */
-
-@media 
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2) {
-  
-  .social a.twitter { background-size: 90px; background-position: -60px 0px; }
-  .social a.twitter:hover { background-size: 90px; background-position: -30px 0px; }
-
-  .social a.github { background-size: 90px; background-position: -60px -180px; }
-  .social a.github:hover { background-size: 90px; background-position: -30px -180px; }
-
-  .social a.instagram { background-size: 90px; background-position: -60px -120px; }
-  .social a.instagram:hover { background-size: 90px; background-position: -30px -120px; }
-
-  .social a.linkedin { background-size: 90px; background-position: -60px -60px; }
-  .social a.linkedin:hover { background-size: 90px; background-position: -30px -60px; }
-
-  .social a.skype { background-size: 90px; background-position: -60px -150px; }
-  .social a.skype:hover { background-size: 90px; background-position: -30px -150px; }
-
-  .social a.dribbble { background-size: 90px; background-position: -60px -120px; }
-  .social a.dribbble:hover { background-size: 90px; background-position: -30px -120px; }
-}
-
-
