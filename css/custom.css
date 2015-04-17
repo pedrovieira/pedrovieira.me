@@ -156,6 +156,11 @@ span.app-type {
   .app-harbinger p {
     color: #df5826; /* Music Harbginer orange */
   }
+  .app-harbinger img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;
+  }
   .app-harbinger span.app-name {
     background-color: #ff832e;
     width: 190px;
@@ -169,6 +174,11 @@ span.app-type {
 
   .app-picturito p {
     color: #2a9ad6; /* Picturito blue */ 
+  }
+  .app-picturito img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;
   }
   .app-picturito span.app-name {
     background-color: #2697d1;
