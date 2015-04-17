@@ -90,7 +90,7 @@ p {
   text-align: center;
 }
 span.app-name {
-  display: block;
+  display: inline-block;
   font-weight: bold;
   color: white;
   padding: 2px 6px 0px;
@@ -100,6 +100,20 @@ span.app-name {
   text-align: center;
   margin: 0 auto 12px;
 }
+
+span.app-type {
+  display: inline-block;
+  font-weight: 600;
+  color: #bbb;
+  background-color: #eee;
+  padding: 6px 6px 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 4px;
+}
+
+
 
   .app-muzzy p{
     color: #d96364; /* Muzzy red */
@@ -118,6 +132,25 @@ span.app-name {
   }
   .app-muzzy a:active{
     background-color: rgba(246,205,212,.48);
+  }
+
+  .app-density p{
+    color: rgba(101,74,158,1); /* Density purple */
+  }
+  .app-density img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;
+  }
+  .app-density span.app-name {
+    background-color: rgba(101,74,158,1);
+    width: 90px;
+  }
+  .app-density a:hover{
+    background-color: rgba(101,74,158,.08);
+  }
+  .app-density a:active{
+    background-color: rgba(101,74,158,.18);
   }
 
   .app-harbinger p {
