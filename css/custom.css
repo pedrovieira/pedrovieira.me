@@ -104,8 +104,8 @@ span.app-name {
 span.app-type {
   display: inline-block;
   font-weight: 600;
-  color: #bbb;
-  background-color: #eee;
+  color: rgba(0,0,0,.35);
+  background-color: rgba(0,0,0,.08);
   padding: 6px 6px 1px;
   border-radius: 4px;
   font-size: 14px;
@@ -194,7 +194,7 @@ span.app-type {
 /*
  * About
  */
- 
+
 .about .avatar {
   text-align: center;
 }
