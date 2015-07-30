@@ -11,6 +11,21 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+p {
+  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+h1 {}
+h2 {}
+h3 {
+  font-size: 18px;
+  //font-family: "AvenirNext-DemiBold";
+  font-weight: 600;
+  color: #b1e2f9;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
 /* Links */
 a,
 a:focus,
@@ -32,8 +47,11 @@ body {
   box-shadow: inset 0 0 100px rgba(0,0,0,.5) fixed;
   text-align: center;
 }
-p {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -106,14 +124,12 @@ span.app-type {
   font-weight: 600;
   color: rgba(0,0,0,.35);
   background-color: rgba(0,0,0,.08);
-  padding: 6px 6px 1px;
+  padding: 6px 6px 2px;
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
   margin-left: 4px;
 }
-
-
 
   .app-muzzy p{
     color: #d96364; /* Muzzy red */
@@ -199,43 +215,45 @@ span.app-type {
   text-align: center;
 }
 .about img {
-  margin: 48px 0 32px;
-  box-shadow: 0 1px 22px rgba(0,0,0,.08);
+  margin: 32px 0 24px;
+  box-shadow: 0 1px 15px rgba(0,0,0,.10), 0 1px 3px rgba(0,0,0,.15);
 }
 
 .about h1 {
-  font-size: 50px;
-  font-weight: 400;
+  font-size: 52px;
+  font-family: "AvenirNext-UltraLight";
   color: #ccd4ec;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .about h2 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: "AvenirNext-Regular";
   color: #bfb3d8;
   text-transform: uppercase;
+  letter-spacing: .23em;
   margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.about h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #b1e2f9;
-  margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .about p {
   font-size: 15px;
-  font-weight: lighter;
   color: #dae0ef;
 }
 
+.callout {
+  color: #fadcc0;
+}
+
+.callout:hover {
+  color: #fadcc0;
+  text-decoration: underline;
+}
+
+
 .social {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .social >li:last-child {
@@ -243,13 +261,21 @@ span.app-type {
   margin: 0;
 }
 
-.social-icon  {
+.social-icon {
   text-indent: 100px;
   font-size: 0;
   width: 30px;
   height: 30px;
   display: inline-block;
   background: no-repeat url("../img/social-icons-spritesheet.png");
+}
+
+.list-inline > li{
+  padding-right: 15px;
+}
+
+p.contact {
+  font-size: 15px;  
 }
 
 .social a.twitter { background-position: -30px 0px; }
@@ -296,69 +322,43 @@ span.app-type {
 }
 
 
-.list-inline > li{
-  padding-right: 15px;
-}
-.skill-break {
-  color: rgba(204,236,212,.4);
-}
-
 .skills {
   margin-bottom:32px;
 }
 
-.callout {
-  color: #fadcc0;
+.skills ul {
 }
 
-.callout:hover {
-  color: #fadcc0;
-  text-decoration: underline;
+.skills li {
+  display: inline-block;
+  color: #dae0ef;
+  background-color: rgba(255,255,255,.06);
+  border-radius: 2px;
+  margin-right: 4px;
+  margin-bottom: 12px;
+  padding: 2px 6px;
 }
 
 /*
   Review
 */
 
-.reviews {
-  margin-top: 52px;
-  padding-left: 30px;
-  text-align: left;
+.press {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  /*text-align: left;*/
+}
+.press ul li {
+  display:inline;
 }
 
-.reviews img {
-  margin: 48px 0 32px;
-}
-.reviews h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #b1e2f9;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
-.review {
-  text-align: left;
-  border-left: 4px solid #bfb3d8;
-  padding-left: 10px;
-}
-
-.reviews p {
-  font-size: 15px;
-  font-weight: lighter;
-  color: #ccd4ec;
-}
-
-.review-site{
-  margin-bottom: 24px;
-}
-
-.review-site-logo {
-  background: no-repeat url("../img/review-sites-sprite-normal@2x.png");
+.press-site-logo {
+  background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
   background-size: 60px; 
+  margin: 8px 0;
 }
-.review-site-logo:hover {
-  background: no-repeat url("../img/review-sites-sprite-hover@2x.png");
+.press-site-logo:hover {
+  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
   background-size: 250px;
  }
 
@@ -366,10 +366,9 @@ span.app-type {
 .site-mac360,
 .site-lifehacker,
 .site-appstorm,
-.site-appstorm,
 .site-macmagazine,
 .site-idownload { 
-  width: 250px;
+  width: 160px;
   height: 28px;  
   text-indent: -9999px;
   background-size: 60px;
@@ -391,19 +390,6 @@ span.app-type {
 .site-appstorm:hover { background-position: 0 -90px; width: 160px; }
 .site-idownload:hover { background-position: 0 -150px; width: 180px;}
 
-
-.review-site-list a {
-  margin: 6px 0;
-}
-
-.reviews .contact{
-  margin-top: 52px;
-  font-size: 24px;
-}
-
-.review-site-list-container {
-  padding-top: 12px;
-}
 
 /*
  * Affix and center
@@ -436,11 +422,6 @@ span.app-type {
   .social {
     text-align: center;
   }
-  .about h3{
-    text-align: center;
-    font-style: 13px;
-    text-transform: uppercase;
-  }
 
   .apps-container {
     padding: 32px 0px;
@@ -466,7 +447,7 @@ span.app-type {
     display: inline-block;
   }
 
-  .review-container {
+  .press-container {
     padding: 0 8px;
   }
 
@@ -539,21 +520,21 @@ span.app-type {
   .apps-container {
     width: 33%;
     margin:auto;
+    padding: 52px 15px 72px;
   }
   .about {
     width: 33%;
     padding-left:20px;
   }
   .about img {
-    margin: 48px 0 32px;
+    //margin: 48px 0 18px;
     width: 120px;
     height: 120px;
   }
   .about p {
-    font-size: 15px;
     padding-right: 0px;
   }
-  .review-container {
+  .press-container {
     margin-top: 52px;
   }
   .reviews-mobile {
@@ -568,11 +549,11 @@ span.app-type {
     width: 1170px;
   }
   .about img {
-    margin: 32px 0 32px;
+    //margin: 32px 0 18px;
     width: 140px;
     height: 140px;
   }
-  .review-container {
+  .press-container {
   }
   .reviews {
     margin-top: 52px;
