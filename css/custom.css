@@ -23,8 +23,7 @@ h3 {
 
 /* Links */
 a,
-a:focus,
-a:hover {
+a:focus, a:hover {
   color: #fadcc0;
 }
 a:hover, a:active, a:focus {
@@ -70,9 +69,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-.inner {
-  padding: 30px;
-}
+.main-container {} /*clearfixed*/
 
 
 /*
