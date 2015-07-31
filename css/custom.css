@@ -20,7 +20,7 @@ h2 {}
 h3 {
   font-size: 18px;
   //font-family: "AvenirNext-DemiBold";
-  font-weight: 600;
+  //font-weight: 600;
   color: #b1e2f9;
   margin-top: 0;
   margin-bottom: 18px;
@@ -355,7 +355,7 @@ p.contact {
 .press-site-logo {
   background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
   background-size: 60px; 
-  margin: 8px 0;
+  padding-bottom: 32px;
 }
 .press-site-logo:hover {
   background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
@@ -368,7 +368,7 @@ p.contact {
 .site-appstorm,
 .site-macmagazine,
 .site-idownload { 
-  width: 160px;
+  min-width: 110px;
   height: 28px;  
   text-indent: -9999px;
   background-size: 60px;
@@ -376,19 +376,19 @@ p.contact {
   background-size: 250px; 
 }
 
-.site-mind-of-geek { background-position: 0 0; }
-.site-mac360 { background-position: 0 -30px; }
-.site-lifehacker { background-position: 0 -60px; width: 120px; }
+.site-mind-of-geek { background-position: 0 0; width: 145px; }
+.site-mac360 { background-position: 0 -29px; width: 115px; }
+.site-lifehacker { background-position: 0 -60px; width: 110px; }
 .site-appstorm { background-position: 0 -90px; width: 160px; }
 .site-macmagazine { background-position: 0 -120px; width: 190px; }
-.site-idownload { background-position: 0 -150px; width: 180px;}
+.site-idownload { background-position: 0 -150px; width: 135px; }
 
-.site-mind-of-geek:hover { background-position: 0 0; }
-.site-mac360:hover { background-position: 0 -30px; }
-.site-lifehacker:hover { background-position: 0 -60px; width: 120px; }
+.site-mind-of-geek:hover { background-position: 0 0; width: 145px; }
+.site-mac360:hover { background-position: 0 -29px; width: 115px;}
+.site-lifehacker:hover { background-position: 0 -60px; width: 110px; }
 .site-macmagazine:hover { background-position: 0 -120px; width: 190px; }
 .site-appstorm:hover { background-position: 0 -90px; width: 160px; }
-.site-idownload:hover { background-position: 0 -150px; width: 180px;}
+.site-idownload:hover { background-position: 0 -150px; width: 135px; }
 
 
 /*

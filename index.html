@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon-64.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-114.png">
 
-    <title>Pedro Vieira - Mac OS X Developer</title>
+    <title>Pedro Vieira - Software Developer</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -19,26 +19,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
-    <script>
-      window.onload = function() {
-        var tweets = ["@w1tch_ Hi Pedro, what's up?",
-                               "@w1tch_ Sup Pedro, I heard you like making cool apps.",
-                               "@w1tch_ Sup Pedro, I heard you dig Daft Punk.",
-                               "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");",
-                               "@w1tch_ *beep boop beep* Sup Pedro, yes I'm not a robot."];
-        var item = tweets[Math.floor(Math.random()*tweets.length)];
-          
-        var links = document.links;
-        for (var i=0, n=links.length;i<n;i++) {
-            if (links[i].title === "tweet") {
-              links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);  
-              links[i].target = "_blank";
-            }
-        }
-      }
-    </script>
   </head>
 
   <body>
@@ -54,8 +34,8 @@
                 <img src="img/avatar@2x.jpg" class="img-circle" alt="Pedro's avatar" />
               </div>
               <h1> Pedro Vieira </h1>
-              <h2> Mac OS X Developer </h2>
-              <p>I‘m a 20-year-old self-taught Mac OS X developer from Portugal. Currently studying Computer Science at <a class="callout" href="http://www.fct.unl.pt/en/faculty">FCT/UNL</a> and working at <a class="callout" href="http://www.hokolinks.com">HOKO</a>.</p>
+              <h2> Software Developer </h2>
+              <p>I‘m a 20-year-old self-taught software developer from Portugal. Currently studying Computer Science at <a class="callout" href="http://www.fct.unl.pt/en/faculty">FCT/UNL</a> and working at <a class="callout" href="http://www.hokolinks.com">HOKO</a>.</p>
               <ul class="social list-inline">
                 <!-- Icons by Joseph Wain: http://www.glyphish.com -->
                 <li><a class="social-icon twitter" href="https://twitter.com/w1tch_"> Twitter </a></li>
@@ -78,7 +58,6 @@
                   <li><a class="press-site-logo site-appstorm" href="http://mac.appstorm.net/reviews/music-reviews/muzzy-a-simpler-way-to-keep-track-of-now-playing/"> Appstorm </a></li>
                   <li><a class="press-site-logo site-macmagazine" href="http://macmagazine.com.br/2013/06/04/muzzy-e-um-simples-e-elegante-aplicativo-para-acompanhar-o-que-esta-tocando-no-itunes"> Mac Magazine </a></li>
                   <li><a class="press-site-logo site-idownload" href="http://www.idownloadblog.com/2013/06/05/muzzy-osx-review/"> iDownload </a></li>
-                  
                   <li><a class="press-site-logo site-mac360" href="http://mac360.com/2013/06/itunes-menubar-controls-song-lyrics-album-artwork-music-browsingall-in-a-free-app-named-muzzy/"> Mac 360 </a></li>
                 </ul>
               </div>  <!-- End Press -->
@@ -120,7 +99,7 @@
                 <img src="img/app-density-icon_256x256@2x.png" alt="Visit densityapp.rocks" class="" />
                 <div class="app-description"> 
                   <span class="app-name"> Density </span> <span class="app-type"> Swift </span>
-                  <p class="lead">A pixel calculator for Designers & Developers</p>
+                  <p class="lead">A pixel calculator for Designers &amp; Developers</p>
                 </div>
               </a>
             </div>
@@ -172,11 +151,34 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> /* Upgrade Javascript */ -->
+
     <script src="../js/bootstrap.min.js"></script>
 
-    <!-- Google Analytics -->
+    <!-- Random Tweet Messages
+    ================================================== -->
+    <script>
+      window.onload = function() {
+        var tweets = ["@w1tch_ Hi Pedro, what's up?",
+                               "@w1tch_ Sup Pedro, I heard you like making cool apps.",
+                               "@w1tch_ Sup Pedro, I heard you dig Daft Punk.",
+                               "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");",
+                               "@w1tch_ *beep boop beep* Sup Pedro, yes I'm not a robot."];
+        var item = tweets[Math.floor(Math.random()*tweets.length)];
+          
+        var links = document.links;
+        for (var i=0, n=links.length;i<n;i++) {
+            if (links[i].title === "tweet") {
+              links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);  
+              links[i].target = "_blank";
+            }
+        }
+      }
+    </script>
+
+    <!-- Google Analytics
+    ================================================== -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -186,6 +188,6 @@
       ga('create', 'UA-40284490-1', 'pedrovieira.me');
       ga('send', 'pageview');
     </script>
-  
+
   </body>
 </html>
