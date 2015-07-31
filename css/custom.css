@@ -20,7 +20,7 @@ h2 {}
 h3 {
   font-size: 18px;
   //font-family: "AvenirNext-DemiBold";
-  //font-weight: 600;
+  font-weight: 600;
   color: #b1e2f9;
   margin-top: 0;
   margin-bottom: 18px;
@@ -207,6 +207,7 @@ span.app-type {
     background-color: rgba(177,226,249,.42);
   }
 
+
 /*
  * About
  */
@@ -322,8 +323,37 @@ p.contact {
 }
 
 
+/*
+ * Review
+ */
+
+.press {
+  margin: 32px 0;
+}
+.press ul li {
+  display:inline;
+}
+
+.press-site-logo {
+  background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
+  background-size: 60px; 
+  padding-bottom: 32px;
+}
+.press-site-logo:hover {
+  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
+  background-size: 250px;
+}
+
+.press-desktop .press {
+  margin: 64px 0 32px 0;
+}
+
+/*
+ * Skills
+ */
+
 .skills {
-  margin-bottom:32px;
+  margin:32px 0;
 }
 
 .skills ul {
@@ -339,28 +369,8 @@ p.contact {
   padding: 2px 6px;
 }
 
-/*
-  Review
-*/
 
-.press {
-  margin-top: 64px;
-  margin-bottom: 32px;
-  /*text-align: left;*/
-}
-.press ul li {
-  display:inline;
-}
 
-.press-site-logo {
-  background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
-  background-size: 60px; 
-  padding-bottom: 32px;
-}
-.press-site-logo:hover {
-  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
-  background-size: 250px;
- }
 
 .site-mind-of-geek,
 .site-mac360,
@@ -368,7 +378,7 @@ p.contact {
 .site-appstorm,
 .site-macmagazine,
 .site-idownload { 
-  min-width: 110px;
+  min-width: 100px;
   height: 28px;  
   text-indent: -9999px;
   background-size: 60px;
@@ -376,20 +386,24 @@ p.contact {
   background-size: 250px; 
 }
 
-.site-mind-of-geek { background-position: 0 0; width: 145px; }
-.site-mac360 { background-position: 0 -29px; width: 115px; }
-.site-lifehacker { background-position: 0 -60px; width: 110px; }
-.site-appstorm { background-position: 0 -90px; width: 160px; }
-.site-macmagazine { background-position: 0 -120px; width: 190px; }
-.site-idownload { background-position: 0 -150px; width: 135px; }
+.site-lifehacker          { background-position: 0 -60px;   width: 100px; }
+.site-lifehacker:hover    { background-position: 0 -60px;   width: 100px; }
 
-.site-mind-of-geek:hover { background-position: 0 0; width: 145px; }
-.site-mac360:hover { background-position: 0 -29px; width: 115px;}
-.site-lifehacker:hover { background-position: 0 -60px; width: 110px; }
-.site-macmagazine:hover { background-position: 0 -120px; width: 190px; }
-.site-appstorm:hover { background-position: 0 -90px; width: 160px; }
-.site-idownload:hover { background-position: 0 -150px; width: 135px; }
+.site-mind-of-geek        { background-position: 0 0;       width: 145px; }
+.site-mind-of-geek:hover  { background-position: 0 0;       width: 145px; }
 
+.site-mac360              { background-position: 0 -29px;   width: 115px; }
+.site-mac360:hover        { background-position: 0 -29px;   width: 115px;}
+
+
+.site-appstorm            { background-position: 0 -90px;   width: 160px; }
+.site-appstorm:hover      { background-position: 0 -90px;   width: 160px; }
+
+.site-macmagazine         { background-position: 0 -120px;  width: 190px; }
+.site-macmagazine:hover   { background-position: 0 -120px;  width: 190px; }
+
+.site-idownload           { background-position: 0 -150px;  width: 135px; }
+.site-idownload:hover     { background-position: 0 -150px;  width: 135px; }
 
 /*
  * Affix and center
@@ -447,25 +461,14 @@ p.contact {
     display: inline-block;
   }
 
-  .press-container {
-    padding: 0 8px;
-  }
-
-  .reviews-full {
+  .press-desktop .press {
     display: none;
   }
-
-  .reviews-mobile {
-    margin-bottom: 52px;
-    padding-left: 15px;
+  .press {
+    margin-bottom: 120px;
   }
-
-  .reviews-mobile p {
-    margin-bottom: 32px;
-  }
-
-  .reviews-mobile .list-inline > li{
-    padding: 0;
+  .press-mobile .list-inline > li{
+    padding: 18px 0;
     display: block;
   }
 }
@@ -484,15 +487,15 @@ p.contact {
     width: 240px;
     height: 240px;
   }
-  .reviews-full {
+  .press-desktop .press {
     display: none;
   }
-  .reviews {
-    margin-bottom: 52px;
-  }
-  .list-inline > li{
+
+  .list-inline > li {
     padding: 0 15px 0 0;
+    display: block;
   }
+
 }
 
 
@@ -506,7 +509,7 @@ p.contact {
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  .reviews-mobile {
+  .press-mobile {
     display: none;
   }
 }
@@ -537,7 +540,7 @@ p.contact {
   .press-container {
     margin-top: 52px;
   }
-  .reviews-mobile {
+  .press-mobile {
     display: none;
   }
 
@@ -559,7 +562,7 @@ p.contact {
     margin-top: 52px;
     padding-right: 30px;
   }
-  .reviews-mobile {
+  .press-mobile {
     display: none;
   }
 }
