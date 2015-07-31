@@ -11,9 +11,6 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
-p {
-  font-family: "AvenirNext-Regular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
 
 h1 {}
 h2 {}
@@ -30,7 +27,10 @@ h3 {
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #fadcc0;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 
@@ -52,6 +52,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+footer {
+  display: none;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -219,7 +222,6 @@ span.app-type {
   margin: 32px 0 24px;
   box-shadow: 0 1px 15px rgba(0,0,0,.10), 0 1px 3px rgba(0,0,0,.15);
 }
-
 .about h1 {
   font-size: 52px;
   font-family: "AvenirNext-UltraLight";
@@ -227,7 +229,6 @@ span.app-type {
   margin-top: 0;
   margin-bottom: 6px;
 }
-
 .about h2 {
   font-size: 18px;
   font-family: "AvenirNext-Regular";
@@ -237,31 +238,18 @@ span.app-type {
   margin-top: 0;
   margin-bottom: 24px;
 }
-
 .about p {
   font-size: 15px;
   color: #dae0ef;
 }
 
-.callout {
-  color: #fadcc0;
-}
-
-.callout:hover {
-  color: #fadcc0;
-  text-decoration: underline;
-}
-
-
 .social {
   margin-bottom: 24px;
 }
-
 .social >li:last-child {
   padding: 0;
   margin: 0;
 }
-
 .social-icon {
   text-indent: 100px;
   font-size: 0;
@@ -333,7 +321,6 @@ p.contact {
 .press ul li {
   display:inline;
 }
-
 .press-site-logo {
   background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
   background-size: 60px; 
@@ -343,7 +330,14 @@ p.contact {
   background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
   background-size: 250px;
 }
-
+.press-site-logo:active {
+  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
+  background-size: 250px;
+}
+.press-site-logo:focus {
+  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
+  background-size: 250px;
+}
 .press-desktop .press {
   margin: 64px 0 32px 0;
 }
@@ -355,10 +349,8 @@ p.contact {
 .skills {
   margin:32px 0;
 }
-
 .skills ul {
 }
-
 .skills li {
   display: inline-block;
   color: #dae0ef;
@@ -368,9 +360,6 @@ p.contact {
   margin-bottom: 12px;
   padding: 2px 6px;
 }
-
-
-
 
 .site-mind-of-geek,
 .site-mac360,
@@ -386,24 +375,35 @@ p.contact {
   background-size: 250px; 
 }
 
-.site-lifehacker          { background-position: 0 -60px;   width: 100px; }
-.site-lifehacker:hover    { background-position: 0 -60px;   width: 100px; }
+.site-lifehacker          { background-position: 0 -58px;   width: 100px; }
+.site-lifehacker:hover    { background-position: 0 -58px;   width: 100px; }
+.site-lifehacker:active   { background-position: 0 -58px;   width: 100px; }
+.site-lifehacker:focus    { background-position: 0 -58px;   width: 100px; }
 
 .site-mind-of-geek        { background-position: 0 0;       width: 145px; }
 .site-mind-of-geek:hover  { background-position: 0 0;       width: 145px; }
+.site-mind-of-geek:active { background-position: 0 0;       width: 145px; }
+.site-mind-of-geek:focus  { background-position: 0 0;       width: 145px; }
 
 .site-mac360              { background-position: 0 -29px;   width: 115px; }
-.site-mac360:hover        { background-position: 0 -29px;   width: 115px;}
-
+.site-mac360:hover        { background-position: 0 -29px;   width: 115px; }
+.site-mac360:active       { background-position: 0 -29px;   width: 115px; }
+.site-mac360:focus        { background-position: 0 -29px;   width: 115px; }
 
 .site-appstorm            { background-position: 0 -90px;   width: 160px; }
 .site-appstorm:hover      { background-position: 0 -90px;   width: 160px; }
+.site-appstorm:active     { background-position: 0 -90px;   width: 160px; }
+.site-appstorm:focus      { background-position: 0 -90px;   width: 160px; }
 
 .site-macmagazine         { background-position: 0 -120px;  width: 190px; }
 .site-macmagazine:hover   { background-position: 0 -120px;  width: 190px; }
+.site-macmagazine:active  { background-position: 0 -120px;  width: 190px; }
+.site-macmagazine:focus   { background-position: 0 -120px;  width: 190px; }
 
 .site-idownload           { background-position: 0 -150px;  width: 135px; }
 .site-idownload:hover     { background-position: 0 -150px;  width: 135px; }
+.site-idownload:active     { background-position: 0 -150px;  width: 135px; }
+.site-idownload:focus     { background-position: 0 -150px;  width: 135px; }
 
 /*
  * Affix and center
@@ -415,13 +415,13 @@ p.contact {
   }
 
   .about img {
-    margin: 20px 0 15px;
-    width: 180px;
-    height: 180px;
+    margin: 32px 0 24px;
+    width: 144px;
+    height: 144px;
   }
   .about h1 {
     text-align: center;
-    font-size: 32px;
+    font-size: 44px;
   }
   .about h2 {
     text-align: center;
@@ -430,7 +430,7 @@ p.contact {
   .about p {
     font-weight: normal;
     text-align: center;
-    font-style: 15px;
+    font-size: 15px;
     padding: 0 8px;
   }
   .social {
@@ -444,10 +444,10 @@ p.contact {
     margin: 0 0 32px;
   }
   .apps-container a p {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0 15px;
   }
-
   .app > a > img{
     display: inline-block;
     border-collapse: collapse;
@@ -455,21 +455,32 @@ p.contact {
     width: 128px; 
     margin-bottom: 4px;
   }
-
   .app-description span {
-    margin: 18px 8px 18px 0;
     display: inline-block;
+    margin: 18px 8px 18px 0;
   }
 
   .press-desktop .press {
     display: none;
   }
   .press {
-    margin-bottom: 120px;
+    margin-top: 64px;
+    margin-bottom: 52px;
   }
   .press-mobile .list-inline > li{
-    padding: 18px 0;
+    padding: 24px 0;
     display: block;
+  }
+
+  footer {
+    color: #dae0ef;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,.06);
+    margin: 32px 30px;
+  }
+  footer p {
+    padding: 32px 0;
+    opacity: .22;
   }
 }
 
@@ -491,7 +502,7 @@ p.contact {
     display: none;
   }
 
-  .list-inline > li {
+  .press-mobile .list-inline > li {
     padding: 0 15px 0 0;
     display: block;
   }
