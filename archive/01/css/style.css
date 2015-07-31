@@ -1,0 +1,230 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+ul, li {list-style: none;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px 'Avenir Next', 'Arial', sans-serif;
+}
+
+a { 
+	color: #7d81cb;
+	border-bottom: 1px dotted #7d81cb;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	border-bottom: 1px dotted rgba(255,255,255,.8);
+}
+a:active {
+	color: rgba(255,255,255,.6);
+	border-bottom: 1px dotted rgba(255,255,255,.6);
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgba(255, 255, 255, .05);}
+::-moz-selection 	{background: rgba(171, 255, 255, .05);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgba(255, 255, 255, .05);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	background: #363a88;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	color: #7d81cb;
+}
+
+.wrap {
+	margin: 90px auto 0;
+	padding: 0 0 36px; /*fixme*/
+	width: 896px;
+
+	text-align: center;
+}
+
+.header {
+	/*background: url('../images/lightning.png');*/
+	height: 38px;
+	width: 30px;
+	margin: 0 auto 45px;
+}
+
+.temp h1 {
+	color: rgba(255,255,255,.8);
+	margin-bottom: 18px;
+}
+.temp p {
+	width: 480px;
+	margin: 0 auto;
+}
+
+.temp p.social {
+	margin-top: 28px;
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.wrap {
+		margin: 90px auto 0;
+		padding: 0 0 36px; /*fixme*/
+		width: 712px; /*fixme*/
+	}
+
+	.hero {
+		margin: 0 146px;
+	}
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.wrap {
+		width: 320px;
+		margin: 36px auto 36px;
+	}
+
+	.mobile { 
+		display: block;
+	}
+	.normal { 
+		display: none; 
+	}
+	.header{
+		margin: 0 auto 26px;
+	}
+	.hero {
+		width: 285px;
+	}
+	.temp h1 {
+		font-size: 44px;
+	}
+	.temp p {
+		max-width: 300px;
+		width: none;
+	}
+
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+		.temp h1 {
+			font-weight: bold;
+		}
+}
