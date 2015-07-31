@@ -10,8 +10,6 @@ body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-
-
 h1 {}
 h2 {}
 h3 {
@@ -29,7 +27,7 @@ a:focus,
 a:hover {
   color: #fadcc0;
 }
-a:hover {
+a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
@@ -105,6 +103,7 @@ footer {
 }
 .apps-container a p {
   font-size: 28px;
+  font-weight: 400;
 }
 .apps-container a img {
   margin-bottom: 36px;
@@ -146,7 +145,8 @@ span.app-type {
     background-color: rgba(255,153,153,1);
     width: 80px;
   }
-  .app-muzzy a:hover{
+  .app-muzzy a:hover,
+  .app-muzzy a:focus {
     background-color: rgba(246,205,212,.18);
   }
   .app-muzzy a:active{
@@ -165,10 +165,11 @@ span.app-type {
     background-color: rgba(101,74,158,1);
     width: 90px;
   }
-  .app-density a:hover{
+  .app-density a:hover,
+  .app-density a:focus {
     background-color: rgba(101,74,158,.08);
   }
-  .app-density a:active{
+  .app-density a:active {
     background-color: rgba(101,74,158,.18);
   }
 
@@ -184,10 +185,11 @@ span.app-type {
     background-color: #ff832e;
     width: 190px;
   }
-  .app-harbinger a:hover{
+  .app-harbinger a:hover,
+  .app-harbinger a:focus {
     background-color: rgba(246,195,167,.24);
   }
-  .app-harbinger a:active{
+  .app-harbinger a:active {
     background-color: rgba(246,195,167,.52);
   }
 
@@ -203,7 +205,8 @@ span.app-type {
     background-color: #2697d1;
     width: 110px;
   }
-  .app-picturito a:hover{
+  .app-picturito a:hover,
+  .app-picturito a:focus {
     background-color: rgba(177,226,249,.18);
   }
   .app-picturito a:active{
@@ -268,22 +271,34 @@ p.contact {
 }
 
 .social a.twitter { background-position: -30px 0px; }
-.social a.twitter:hover { background-position: 0px 0px; }
+.social a.twitter:hover, 
+.social a.twitter:active,
+.social a.twitter:focus { background-position: 0px 0px; }
 
 .social a.github { background-position: -30px -180px; }
-.social a.github:hover { background-position: 0px -180px; }
+.social a.github:hover,
+.social a.github:active,
+.social a.github:focus { background-position: 0px -180px; }
 
 .social a.instagram { background-position: -30px -120px; }
-.social a.instagram:hover { background-position: 0px -120px; }
+.social a.instagram:hover,
+.social a.instagram:active,
+.social a.instagram:focus { background-position: 0px -120px; }
 
 .social a.linkedin { background-position: -30px -60px; }
-.social a.linkedin:hover { background-position: 0px -60px; }
+.social a.linkedin:hover,
+.social a.linkedin:active,
+.social a.linkedin:focus { background-position: 0px -60px; }
 
 .social a.skype { background-position: -30px -150px; }
-.social a.skype:hover { background-position: 0px -150px; }
+.social a.skype:hover,
+.social a.skype:active,
+.social a.skype:focus { background-position: 0px -150px; }
 
 .social a.dribbble { background-position: -30px -120px; }
-.social a.dribbble:hover { background-position: 0px -120px; }
+.social a.dribbble:hover,
+.social a.dribbble:active,
+.social a.dribbble:focus { background-position: 0px -120px; }
 
 /* @2x icons */
 
@@ -315,25 +330,19 @@ p.contact {
  * Review
  */
 
-.press {
-  margin: 32px 0;
+.press { 
+  margin: 32px 0; 
 }
-.press ul li {
-  display:inline;
+.press ul li { 
+  display:inline; 
 }
 .press-site-logo {
   background: no-repeat url("../img/press-sites-sprite-normal@2x.png");
   background-size: 60px; 
   padding-bottom: 32px;
 }
-.press-site-logo:hover {
-  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
-  background-size: 250px;
-}
-.press-site-logo:active {
-  background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
-  background-size: 250px;
-}
+.press-site-logo:hover,
+.press-site-logo:active,
 .press-site-logo:focus {
   background: no-repeat url("../img/press-sites-sprite-hover@2x.png");
   background-size: 250px;
@@ -353,7 +362,7 @@ p.contact {
 }
 .skills li {
   display: inline-block;
-  color: #dae0ef;
+  color: #dae0ef; 
   background-color: rgba(255,255,255,.06);
   border-radius: 2px;
   margin-right: 4px;
@@ -376,33 +385,33 @@ p.contact {
 }
 
 .site-lifehacker          { background-position: 0 -58px;   width: 100px; }
-.site-lifehacker:hover    { background-position: 0 -58px;   width: 100px; }
-.site-lifehacker:active   { background-position: 0 -58px;   width: 100px; }
+.site-lifehacker:hover,
+.site-lifehacker:active,
 .site-lifehacker:focus    { background-position: 0 -58px;   width: 100px; }
 
 .site-mind-of-geek        { background-position: 0 0;       width: 145px; }
-.site-mind-of-geek:hover  { background-position: 0 0;       width: 145px; }
-.site-mind-of-geek:active { background-position: 0 0;       width: 145px; }
+.site-mind-of-geek:hover,
+.site-mind-of-geek:active,
 .site-mind-of-geek:focus  { background-position: 0 0;       width: 145px; }
 
 .site-mac360              { background-position: 0 -29px;   width: 115px; }
-.site-mac360:hover        { background-position: 0 -29px;   width: 115px; }
-.site-mac360:active       { background-position: 0 -29px;   width: 115px; }
+.site-mac360:hover,
+.site-mac360:active,
 .site-mac360:focus        { background-position: 0 -29px;   width: 115px; }
 
 .site-appstorm            { background-position: 0 -90px;   width: 160px; }
-.site-appstorm:hover      { background-position: 0 -90px;   width: 160px; }
-.site-appstorm:active     { background-position: 0 -90px;   width: 160px; }
+.site-appstorm:hover,
+.site-appstorm:active,
 .site-appstorm:focus      { background-position: 0 -90px;   width: 160px; }
 
 .site-macmagazine         { background-position: 0 -120px;  width: 190px; }
-.site-macmagazine:hover   { background-position: 0 -120px;  width: 190px; }
-.site-macmagazine:active  { background-position: 0 -120px;  width: 190px; }
+.site-macmagazine:hover,
+.site-macmagazine:active,
 .site-macmagazine:focus   { background-position: 0 -120px;  width: 190px; }
 
 .site-idownload           { background-position: 0 -150px;  width: 135px; }
-.site-idownload:hover     { background-position: 0 -150px;  width: 135px; }
-.site-idownload:active     { background-position: 0 -150px;  width: 135px; }
+.site-idownload:hover,
+.site-idownload:active,
 .site-idownload:focus     { background-position: 0 -150px;  width: 135px; }
 
 /*
