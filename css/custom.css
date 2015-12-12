@@ -14,7 +14,6 @@ h1 {}
 h2 {}
 h3 {
   font-size: 18px;
-  //font-family: "AvenirNext-DemiBold";
   font-weight: 600;
   color: #b1e2f9;
   margin-top: 0;
@@ -345,7 +344,7 @@ p.contact {
   background-size: 250px;
 }
 .press-desktop .press {
-  margin: 64px 0 32px 0;
+  margin: 64px 0;
 }
 
 /*
@@ -396,7 +395,7 @@ p.contact {
 .site-mac360:active,
 .site-mac360:focus        { background-position: 0 -29px;   width: 115px; }
 
-.site-appstorm            { background-position: 0 -90px;   width: 160px; }
+.site-appstorm            { background-position: 0 -89px;   width: 160px; }
 .site-appstorm:hover,
 .site-appstorm:active,
 .site-appstorm:focus      { background-position: 0 -90px;   width: 160px; }
@@ -545,9 +544,9 @@ p.contact {
   .about {
     width: 33%;
     padding-left:20px;
+
   }
   .about img {
-    //margin: 48px 0 18px;
     width: 120px;
     height: 120px;
   }
@@ -568,12 +567,18 @@ p.contact {
   .main-container {
     width: 1170px;
   }
+  .about {
+    margin-top: 50px;
+  }
   .about img {
-    //margin: 32px 0 18px;
     width: 140px;
     height: 140px;
   }
-  .press-container {
+  .press-desktop {
+    margin-top: 70px;
+  }
+  .press {
+
   }
   .reviews {
     margin-top: 52px;
