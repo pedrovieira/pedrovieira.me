@@ -26,7 +26,7 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
           <div class="main-container clearfix">
-            
+
             <!-- About -->
             <div class="about col-md-4">
               <div class="avatar">
@@ -60,7 +60,7 @@
                 </ul>
               </div>  <!-- End Press -->
 
-              <div class="skills"> 
+              <div class="skills">
                 <h3> Skills / Interests </h3>
                 <ul>
                   <li> Objective-C &amp; Cocoa </li>
@@ -69,13 +69,13 @@
                   <li> iOS </li>
                   <li> C </li>
                   <li> Java </li>
-                  <li> MySQL </li>
+                  <li> SQL </li>
                   <li> Visual Basic .NET </li>
                   <li> Dancing to Daft Punk </li>
                 </ul>
               </div>
             </div> <!-- End Skills -->
-            
+
           </div> <!-- End main-container -->
 
           <!-- Apps -->
@@ -85,7 +85,7 @@
             <div class="app app-muzzy">
               <a href="http://muzzyapp.com/">
                 <img src="img/app-muzzy-icon_256x256@2x.png" alt="Visit getmuzzy.com" class="" />
-                <div class="app-description"> 
+                <div class="app-description">
                   <span class="app-name"> Muzzy </span> <span class="app-type"> Obj-C </span>
                   <p class="lead">A tiny and gorgeous iTunes companion that lives in your menu bar</p>
                 </div>
@@ -95,7 +95,7 @@
             <div class="app app-density">
               <a href="http://densityapp.rocks/">
                 <img src="img/app-density-icon_256x256@2x.png" alt="Visit densityapp.rocks" class="" />
-                <div class="app-description"> 
+                <div class="app-description">
                   <span class="app-name"> Density </span> <span class="app-type"> Swift </span>
                   <p class="lead">A pixel calculator for Designers &amp; Developers</p>
                 </div>
@@ -135,9 +135,9 @@
                   <li><a class="press-site-logo site-idownload" href="http://www.idownloadblog.com/2013/06/05/muzzy-osx-review/"> iDownload </a></li>
                   <li><a class="press-site-logo site-mac360" href="http://mac360.com/2013/06/itunes-menubar-controls-song-lyrics-album-artwork-music-browsingall-in-a-free-app-named-muzzy/"> Mac 360 </a></li>
                 </ul>
-            </div>        
+            </div>
           </div> <!-- End Press -->
-          
+
           <!-- Shot Footer on mobile -->
           <footer>
             <p> Pedro Vieira &#169; 2015 </p>
@@ -157,17 +157,20 @@
     ================================================== -->
     <script>
       window.onload = function() {
-        var tweets = ["@w1tch_ Hi Pedro, what's up?",
-                               "@w1tch_ Sup Pedro, I heard you like making cool apps.",
-                               "@w1tch_ Sup Pedro, I heard you dig Daft Punk.",
-                               "@w1tch_ NSLog(@\"Hi Pedro, what's up?\");",
-                               "@w1tch_ *beep boop beep* Sup Pedro, yes I'm not a robot."];
+        var tweets = [
+          "@w1tch_ Hi Pedro, what's up?",
+          "@w1tch_ Sup Pedro, I heard you like making cool apps.",
+          "@w1tch_ Sup Pedro, I heard you dig Daft Punk.",
+          "@w1tch_ print(\"Hi Pedro, what's up?\")",
+          "@w1tch_ *beep boop beep* Sup Pedro, yes I'm not a robot."
+          "@w1tch_ Hey Pedro, gettin' Swifty?"
+        ];
         var item = tweets[Math.floor(Math.random()*tweets.length)];
-          
+
         var links = document.links;
         for (var i=0, n=links.length;i<n;i++) {
             if (links[i].title === "tweet") {
-              links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);  
+              links[i].href = "https://twitter.com/intent/tweet?text=".concat(item);
               links[i].target = "_blank";
             }
         }
