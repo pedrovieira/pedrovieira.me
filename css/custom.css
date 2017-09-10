@@ -129,6 +129,25 @@ span.app-type {
   margin-left: 4px;
 }
 
+  .app-sneakgit p{
+    color: #444A54; /* Background gray */
+  }
+  .app-sneakgit img{
+    border-collapse: collapse;
+    height: 256px;
+    width: 256px;
+  }
+  .app-sneakgit span.app-name {
+    background-color: rgba(0,0,0,1);
+  }
+  .app-sneakgit a:hover,
+  .app-sneakgit a:focus {
+    background-color: rgba(68,74,84,.08);
+  }
+  .app-sneakgit a:active{
+    background-color: rgba(68,74,84,.24);
+  }
+
   .app-muzzy p{
     color: #d96364; /* Muzzy red */
   }
@@ -138,7 +157,7 @@ span.app-type {
     width: 256px;
   }
   .app-muzzy span.app-name {
-    background-color: rgba(255,153,153,1);
+    background-color: rgba(255, 153, 153, 1);
     width: 80px;
   }
   .app-muzzy a:hover,
