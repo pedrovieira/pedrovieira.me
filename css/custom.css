@@ -138,7 +138,7 @@ span.app-type {
     width: 256px;
   }
   .app-sneakgit span.app-name {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(28,34,43,1);
   }
   .app-sneakgit a:hover,
   .app-sneakgit a:focus {
